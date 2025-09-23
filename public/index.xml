@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blowfish</title>
-    <link>//localhost:1313/</link>
+    <link>/</link>
     <description>Recent content on Blowfish</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>mahirabd.official@gmail.com (Mahir)</managingEditor>
     <webMaster>mahirabd.official@gmail.com (Mahir)</webMaster>
     <copyright>© 2025 Mahir</copyright>
-    <lastBuildDate>Tue, 23 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title></title>
-      <link>//localhost:1313/posts/test/</link>
+      <link>/posts/test/</link>
       <pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate>
       <author>mahirabd.official@gmail.com (Mahir)</author>
-      <guid>//localhost:1313/posts/test/</guid>
+      <guid>/posts/test/</guid>
       <description></description>
       
     </item>
