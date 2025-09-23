@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blowfish</title>
-    <link>http://localhost:1313/mahir-m01/blog/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Blowfish</description>
     <generator>Hugo</generator>
     <language>en</language>
     <managingEditor>mahirabd.official@gmail.com (Mahir)</managingEditor>
     <webMaster>mahirabd.official@gmail.com (Mahir)</webMaster>
     <lastBuildDate>Tue, 23 Sep 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/mahir-m01/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/mahir-m01/blog/posts/test/</link>
+      <link>http://localhost:1313/posts/test/</link>
       <pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate><author>mahirabd.official@gmail.com (Mahir)</author>
-      <guid>http://localhost:1313/mahir-m01/blog/posts/test/</guid>
+      <guid>http://localhost:1313/posts/test/</guid>
       <description></description>
     </item>
   </channel>
