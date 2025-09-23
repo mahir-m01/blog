@@ -4,22 +4,18 @@
     <title>Blowfish</title>
     <link>/</link>
     <description>Recent content on Blowfish</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <managingEditor>mahirabd.official@gmail.com (Mahir)</managingEditor>
     <webMaster>mahirabd.official@gmail.com (Mahir)</webMaster>
-    <copyright>© 2025 Mahir</copyright>
-    <lastBuildDate>Tue, 23 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Tue, 23 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>/posts/test/</link>
-      <pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate>
-      <author>mahirabd.official@gmail.com (Mahir)</author>
+      <pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate><author>mahirabd.official@gmail.com (Mahir)</author>
       <guid>/posts/test/</guid>
       <description></description>
-      
     </item>
-    
   </channel>
 </rss>

@@ -4,12 +4,10 @@
     <title>Authors on Blowfish</title>
     <link>/authors/</link>
     <description>Recent content in Authors on Blowfish</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <managingEditor>mahirabd.official@gmail.com (Mahir)</managingEditor>
     <webMaster>mahirabd.official@gmail.com (Mahir)</webMaster>
-    <copyright>© 2025 Mahir</copyright>
     <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
-    
   </channel>
 </rss>
