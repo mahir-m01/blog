@@ -3,7 +3,7 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish" 
-#baseURL = "https://your_domain.com/"
+baseURL = "https://github.com/mahir-m01/blog/"
 defaultContentLanguage = "en"
 
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
@@ -17,6 +17,10 @@ buildFuture = false
 enableEmoji = true
 
 # googleAnalytics = "G-XXXXXXXXX"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
 
 [pagination]
   pagerSize = 100
