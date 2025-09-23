@@ -9,4 +9,4 @@ this is a test test
 
 below is a test image
 
-![img1.png](/images/img1.png)
+![img1.png](images/img1.png)
