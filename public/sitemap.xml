@@ -2,34 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/test/</loc>
+    <loc>http://localhost:1313/mahir-m01/blog/posts/test/</loc>
     <lastmod>2025-09-23T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/</loc>
+    <loc>http://localhost:1313/mahir-m01/blog/</loc>
     <lastmod>2025-09-23T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/posts/</loc>
+    <loc>http://localhost:1313/mahir-m01/blog/posts/</loc>
     <lastmod>2025-09-23T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/authors/</loc>
+    <loc>http://localhost:1313/mahir-m01/blog/authors/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>http://localhost:1313/mahir-m01/blog/categories/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/series/</loc>
+    <loc>http://localhost:1313/mahir-m01/blog/series/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>http://localhost:1313/mahir-m01/blog/tags/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
