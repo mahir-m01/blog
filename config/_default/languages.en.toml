@@ -2,7 +2,7 @@ disabled = false
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "Blowfish"
+title = "Blog"
 
 [params]
   displayName = "EN"
@@ -18,7 +18,7 @@ title = "Blowfish"
   name = "Mahir"
   email = "mahirabd.official@gmail.com"
   image = "https://avatars.githubusercontent.com/u/207461775?v=4"
-  headline = "I'm only human"
+  headline = "duh"
   bio = "A little bit about you sigh"
   links = [
 #     { email = "mailto:hello@your_domain.com" },
