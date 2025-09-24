@@ -24,6 +24,8 @@ enableEmoji = true
 #       [markup.goldmark.parser.attribute]
 #         block = true
 
+
+
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
