@@ -11,15 +11,15 @@ title = "M01's Tech Blog"
   dateFormat = "2 January 2006"
   # logo = "img/logo.png"
   # secondaryLogo = "img/secondary-logo.png"
-  # description = "My awesome website"
+  description = "My Tech Blog"
   # copyright = "Copy, _right?_ :thinking_face:"
 
 [params.author]
   name = "Mahir"
   email = "mahirabd.official@gmail.com"
   image = "https://avatars.githubusercontent.com/u/207461775?v=4"
-  headline = "Tech"
-  bio = "catpuccin mocha all the way"
+  headline = "Bits, Bytes, and Beyond"
+  bio = "I poke at code, dig into security, and write down whatever I learn along the way."
   links = [
 #     { email = "mailto:hello@your_domain.com" },
 #     { link = "https://link-to-some-website.com/" },
@@ -44,7 +44,7 @@ title = "M01's Tech Blog"
 #     { keyoxide = "https://keyoxide.org/URI" },
 #     { kickstarter = "https://www.kickstarter.com/profile/username" },
 #     { lastfm = "https://lastfm.com/user/username" },
-#     { linkedin = "https://linkedin.com/in/username" },
+      { linkedin = "https://www.linkedin.com/in/mahir-abdullah-a21633323/" },
 #     { mastodon = "https://mastodon.instance/@username" },
 #     { matrix = "https://matrix.to/#/URI" },
 #     { medium = "https://medium.com/username" },

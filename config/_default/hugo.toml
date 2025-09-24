@@ -17,6 +17,8 @@ enableEmoji = true
 
 # googleAnalytics = "G-XXXXXXXXX"
 
+
+
 # [markup]
 #   [markup.goldmark]
 #     [markup.goldmark.parser]
@@ -25,6 +27,9 @@ enableEmoji = true
 #         block = true
 
 
+[params]
+  favicon32 = "/favicon-32x32.png"
+  favicon16 = "/favicon-16x16.png"
 
 [caches]
   [caches.images]
