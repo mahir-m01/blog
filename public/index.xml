@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>M01&#39;s Tech Blog</title>
+    <title>M01&#39;s Tech Space</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on M01&#39;s Tech Blog</description>
+    <description>Recent content on M01&#39;s Tech Space</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>mahirabd.official@gmail.com (Mahir)</managingEditor>
@@ -29,6 +29,16 @@
       <guid>http://localhost:1313/posts/this-is-a-test-blog/</guid>
       <description></description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/this-is-a-test-blog/featured.png" />
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>mahirabd.official@gmail.com (Mahir)</author>
+      <guid>http://localhost:1313/about/</guid>
+      <description></description>
+      
     </item>
     
   </channel>

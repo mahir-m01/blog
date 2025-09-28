@@ -2,7 +2,7 @@ disabled = false
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "M01's Tech Blog"
+title = "M01's Tech Space"
 
 [params]
   displayName = "EN"
@@ -18,7 +18,7 @@ title = "M01's Tech Blog"
   name = "Mahir"
   email = "mahirabd.official@gmail.com"
   image = "https://avatars.githubusercontent.com/u/207461775?v=4"
-  headline = "Bits, Bytes, and Beyond"
+  headline = "Chronicles of curiosity, experiments, and discoveries in technology"
   bio = "I poke at code, dig into security, and write down whatever I learn along the way."
   links = [
 #     { email = "mailto:hello@your_domain.com" },
