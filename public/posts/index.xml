@@ -9,26 +9,16 @@
     <managingEditor>mahirabd.official@gmail.com (Mahir)</managingEditor>
     <webMaster>mahirabd.official@gmail.com (Mahir)</webMaster>
     <copyright>© 2025 Mahir</copyright>
-    <lastBuildDate>Wed, 24 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Test blog 2</title>
-      <link>http://localhost:1313/posts/this-is-a-test-blog-2/</link>
-      <pubDate>Wed, 24 Sep 2025 00:00:00 +0000</pubDate>
+      <title>ECC is interesting</title>
+      <link>http://localhost:1313/posts/elliptical-curve-cryptography/</link>
+      <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
       <author>mahirabd.official@gmail.com (Mahir)</author>
-      <guid>http://localhost:1313/posts/this-is-a-test-blog-2/</guid>
+      <guid>http://localhost:1313/posts/elliptical-curve-cryptography/</guid>
       <description></description>
       
-    </item>
-    
-    <item>
-      <title>This is a test blog</title>
-      <link>http://localhost:1313/posts/this-is-a-test-blog/</link>
-      <pubDate>Wed, 24 Sep 2025 00:00:00 +0000</pubDate>
-      <author>mahirabd.official@gmail.com (Mahir)</author>
-      <guid>http://localhost:1313/posts/this-is-a-test-blog/</guid>
-      <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/this-is-a-test-blog/featured.png" />
     </item>
     
   </channel>
