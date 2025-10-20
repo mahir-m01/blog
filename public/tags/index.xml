@@ -9,7 +9,27 @@
     <managingEditor>mahirabd.official@gmail.com (Mahir)</managingEditor>
     <webMaster>mahirabd.official@gmail.com (Mahir)</webMaster>
     <copyright>© 2025 Mahir</copyright>
-    <lastBuildDate>Mon, 29 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>TryHackMe</title>
+      <link>http://localhost:1313/tags/tryhackme/</link>
+      <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
+      <author>mahirabd.official@gmail.com (Mahir)</author>
+      <guid>http://localhost:1313/tags/tryhackme/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Wireshark</title>
+      <link>http://localhost:1313/tags/wireshark/</link>
+      <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
+      <author>mahirabd.official@gmail.com (Mahir)</author>
+      <guid>http://localhost:1313/tags/wireshark/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Cryptograpahy</title>
@@ -17,6 +37,16 @@
       <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
       <author>mahirabd.official@gmail.com (Mahir)</author>
       <guid>http://localhost:1313/tags/cryptograpahy/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>ECC</title>
+      <link>http://localhost:1313/tags/ecc/</link>
+      <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
+      <author>mahirabd.official@gmail.com (Mahir)</author>
+      <guid>http://localhost:1313/tags/ecc/</guid>
       <description></description>
       
     </item>
