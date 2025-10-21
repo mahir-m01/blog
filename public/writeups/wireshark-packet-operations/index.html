@@ -14,15 +14,15 @@
   <meta name="theme-color">
 
   
-  <title>Wireshark: The Basics &middot; M01&#39;s Tech Space</title>
-    <meta name="title" content="Wireshark: The Basics &middot; M01&#39;s Tech Space">
+  <title>Wireshark: Packet Operations &middot; M01&#39;s Tech Space</title>
+    <meta name="title" content="Wireshark: Packet Operations &middot; M01&#39;s Tech Space">
 
   
   <meta name="description" content="My Tech Blog">
   <meta name="keywords" content="TryHackMe,Wireshark,">
   
   
-  <link rel="canonical" href="http://localhost:1313/writeups/wireshark-the-basics/">
+  <link rel="canonical" href="http://localhost:1313/writeups/wireshark-packet-operations/">
   
   
   
@@ -107,21 +107,21 @@
   
 
   
-  <meta property="og:url" content="http://localhost:1313/writeups/wireshark-the-basics/">
+  <meta property="og:url" content="http://localhost:1313/writeups/wireshark-packet-operations/">
   <meta property="og:site_name" content="M01&#39;s Tech Space">
-  <meta property="og:title" content="Wireshark: The Basics">
+  <meta property="og:title" content="Wireshark: Packet Operations">
   <meta property="og:description" content="My Tech Blog">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="writeups">
-    <meta property="article:published_time" content="2025-10-20T00:00:00+00:00">
-    <meta property="article:modified_time" content="2025-10-20T00:00:00+00:00">
+    <meta property="article:published_time" content="2025-10-21T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-10-21T00:00:00+00:00">
     <meta property="article:tag" content="TryHackMe">
     <meta property="article:tag" content="Wireshark">
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Wireshark: The Basics">
+  <meta name="twitter:title" content="Wireshark: Packet Operations">
   <meta name="twitter:description" content="My Tech Blog">
 
   <script type="application/ld+json">
@@ -129,26 +129,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Writeups",
-    "name": "Wireshark: The Basics",
-    "headline": "Wireshark: The Basics",
+    "name": "Wireshark: Packet Operations",
+    "headline": "Wireshark: Packet Operations",
     
     
     "inLanguage": "en",
-    "url" : "http:\/\/localhost:1313\/writeups\/wireshark-the-basics\/",
+    "url" : "http:\/\/localhost:1313\/writeups\/wireshark-packet-operations\/",
     "author" : {
       "@type": "Person",
       "name": "Mahir"
     },
     "copyrightYear": "2025",
-    "dateCreated": "2025-10-20T00:00:00\u002b00:00",
-    "datePublished": "2025-10-20T00:00:00\u002b00:00",
+    "dateCreated": "2025-10-21T00:00:00\u002b00:00",
+    "datePublished": "2025-10-21T00:00:00\u002b00:00",
     
-    "dateModified": "2025-10-20T00:00:00\u002b00:00",
+    "dateModified": "2025-10-21T00:00:00\u002b00:00",
     
     "keywords": ["TryHackMe","Wireshark"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "326"
+    "wordCount": "513"
   }]
   </script>
 
@@ -586,8 +586,8 @@
 
   
   <li class="hidden">
-    <a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/writeups/wireshark-the-basics/"
-      >Wireshark: The Basics</a
+    <a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/writeups/wireshark-packet-operations/"
+      >Wireshark: Packet Operations</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -596,7 +596,7 @@
 
       
       <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-        Wireshark: The Basics
+        Wireshark: Packet Operations
       </h1>
       <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
         
@@ -649,7 +649,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-10-20T00:00:00&#43;00:00">20 October 2025</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span><span class="px-2 text-primary-500">&middot;</span><span class="mb-[2px]">
+      <time datetime="2025-10-21T00:00:00&#43;00:00">21 October 2025</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span><span class="px-2 text-primary-500">&middot;</span><span class="mb-[2px]">
   <span
     id="zen-mode-button"
     class="text-lg hover:text-primary-500"
@@ -844,60 +844,55 @@
     class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#task-1---introduction">Task 1 - Introduction</a>
+    <li><a href="#task-1---introduction">Task 1 - Introduction</a></li>
+    <li><a href="#task-2---statistics--summary">Task 2 - Statistics | Summary</a>
       <ul>
         <li>
           <ul>
-            <li><a href="#1-file-used-to-simulate-the-screenshots">1) File used to <strong>simulate</strong> the screenshots?</a></li>
-            <li><a href="#2-file-used-to-answer-the-questions">2) File used to <strong>answer</strong> the questions?</a></li>
+            <li><a href="#1-ip-address-of-the-hostname-starts-with-bbc">1) IP address of the hostname starts with &ldquo;bbc&rdquo;?</a></li>
+            <li><a href="#2-number-of-ipv4-conversations">2) Number of IPv4 conversations?</a></li>
+            <li><a href="#3-bytes-k-transferred-from-the-micro-st-mac-address">3) Bytes (k) transferred from the &ldquo;Micro-St&rdquo; MAC address?</a></li>
+            <li><a href="#4-ip-addresses-linked-with-kansas-city">4) IP addresses linked with &ldquo;Kansas City&rdquo;?</a></li>
+            <li><a href="#5-ip-address--linked-with-blicnet-as-organisation">5) IP address  linked with &ldquo;Blicnet&rdquo; AS Organisation?</a></li>
           </ul>
         </li>
       </ul>
     </li>
-    <li><a href="#task-2---tool-overview">Task 2 - Tool Overview</a>
+    <li><a href="#task-3---statistics--protocol-details">Task 3 - Statistics | Protocol Details:</a>
       <ul>
         <li>
           <ul>
-            <li><a href="#1-what-is-the-flag">1) What is the flag?</a></li>
-            <li><a href="#2-total-number-of-packets">2) Total number of packets?</a></li>
-            <li><a href="#3-sha256-hash-value-">3) <strong>SHA256 hash</strong> value ?</a></li>
+            <li><a href="#1most-used-ipv4-destination-address">1) Most used IPv4 destination address?</a></li>
+            <li><a href="#2-max-service-request-response-time-of-the-dns-packets">2) Max service request-response time of the DNS packets?</a></li>
+            <li><a href="#3-http-requests-accomplished-by-radmsncom">3) HTTP Requests accomplished by &ldquo;rad[.]msn[.]com?</a></li>
           </ul>
         </li>
       </ul>
     </li>
-    <li><a href="#task-3---packet-dissection">Task 3 - Packet Dissection</a>
+    <li><a href="#task-4---packet-filtering--principles">Task 4 - Packet Filtering | Principles</a></li>
+    <li><a href="#task-5---packet-filtering--principles">Task 5 - Packet Filtering | Principles</a>
       <ul>
         <li>
           <ul>
-            <li><a href="#1-markup-language-used">1) Markup Language used?</a></li>
-            <li><a href="#2-arrival-date-of-the-packet">2) Arrival date of the packet?</a></li>
-            <li><a href="#3-ttl-value">3) TTL value?</a></li>
-            <li><a href="#4-tcp-payload-size">4) TCP payload size?</a></li>
-            <li><a href="#5-e-tag-value">5) e-tag value?</a></li>
+            <li><a href="#1-number-of-ip-packets">1) Number of IP packets?</a></li>
+            <li><a href="#2-packets-with-a-ttl-value-less-than-10">2) Packets with a &ldquo;TTL value less than 10&rdquo;?</a></li>
+            <li><a href="#3-packets-which-uses-tcp-port-4444">3) Packets which uses &ldquo;TCP port 4444&rdquo;?</a></li>
+            <li><a href="#4-http-get-requests-sent-to-port-80">4) &ldquo;HTTP GET&rdquo; requests sent to port &ldquo;80&rdquo;?</a></li>
+            <li><a href="#5-number-of-type-adnsqueries">5) Number of &ldquo;type A DNS Queries&rdquo;?</a></li>
           </ul>
         </li>
       </ul>
     </li>
-    <li><a href="#task-4---packet-navigation">Task 4 - Packet Navigation</a>
+    <li><a href="#task-6---advanced-filtering">Task 6 - Advanced Filtering</a>
       <ul>
         <li>
           <ul>
-            <li><a href="#1-name-of-artist-1">1) Name of artist 1?</a></li>
-            <li><a href="#2-go-to-packet-12-what-is-the-answer">2) Go to packet 12. What is the answer?</a></li>
-            <li><a href="#3-aliens-name">3) Alien&rsquo;s name?</a></li>
-            <li><a href="#4-number-of-warnings">4) Number of warnings?</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#task-5---packet-filtering">Task 5 - Packet Filtering</a>
-      <ul>
-        <li>
-          <ul>
-            <li><a href="#1--filter-query">1)  Filter query?</a></li>
-            <li><a href="#2-number-of-displayed-packets">2) Number of displayed packets?</a></li>
-            <li><a href="#3-total-number-of-artists">3) Total number of artists?</a></li>
-            <li><a href="#4-name-of-the-second-artist">4) Name of the second artist?</a></li>
+            <li><a href="#1-microsoft-iis-servers-packets-not-from-port-80-">1) Microsoft IIS Servers. Packets not from port 80 ?</a></li>
+            <li><a href="#2-microsoft-iis-servers-packets-that-have-version-75-">2) Microsoft IIS Servers. Packets that have &ldquo;version 7.5&rdquo; ?</a></li>
+            <li><a href="#3-packets-that-use-ports-3333-4444-or-9999">3) Packets that use ports 3333, 4444 or 9999?</a></li>
+            <li><a href="#4-packets-with-even-ttl-numbers">4) Packets with &ldquo;even TTL numbers&rdquo;?</a></li>
+            <li><a href="#5-number-of-bad-tcp-checksum-packets">5) Number of &ldquo;Bad TCP Checksum&rdquo; packets?</a></li>
+            <li><a href="#6-number-of-displayed-packets">6) Number of displayed packets?</a></li>
           </ul>
         </li>
       </ul>
@@ -915,60 +910,55 @@
     class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#task-1---introduction">Task 1 - Introduction</a>
+    <li><a href="#task-1---introduction">Task 1 - Introduction</a></li>
+    <li><a href="#task-2---statistics--summary">Task 2 - Statistics | Summary</a>
       <ul>
         <li>
           <ul>
-            <li><a href="#1-file-used-to-simulate-the-screenshots">1) File used to <strong>simulate</strong> the screenshots?</a></li>
-            <li><a href="#2-file-used-to-answer-the-questions">2) File used to <strong>answer</strong> the questions?</a></li>
+            <li><a href="#1-ip-address-of-the-hostname-starts-with-bbc">1) IP address of the hostname starts with &ldquo;bbc&rdquo;?</a></li>
+            <li><a href="#2-number-of-ipv4-conversations">2) Number of IPv4 conversations?</a></li>
+            <li><a href="#3-bytes-k-transferred-from-the-micro-st-mac-address">3) Bytes (k) transferred from the &ldquo;Micro-St&rdquo; MAC address?</a></li>
+            <li><a href="#4-ip-addresses-linked-with-kansas-city">4) IP addresses linked with &ldquo;Kansas City&rdquo;?</a></li>
+            <li><a href="#5-ip-address--linked-with-blicnet-as-organisation">5) IP address  linked with &ldquo;Blicnet&rdquo; AS Organisation?</a></li>
           </ul>
         </li>
       </ul>
     </li>
-    <li><a href="#task-2---tool-overview">Task 2 - Tool Overview</a>
+    <li><a href="#task-3---statistics--protocol-details">Task 3 - Statistics | Protocol Details:</a>
       <ul>
         <li>
           <ul>
-            <li><a href="#1-what-is-the-flag">1) What is the flag?</a></li>
-            <li><a href="#2-total-number-of-packets">2) Total number of packets?</a></li>
-            <li><a href="#3-sha256-hash-value-">3) <strong>SHA256 hash</strong> value ?</a></li>
+            <li><a href="#1most-used-ipv4-destination-address">1) Most used IPv4 destination address?</a></li>
+            <li><a href="#2-max-service-request-response-time-of-the-dns-packets">2) Max service request-response time of the DNS packets?</a></li>
+            <li><a href="#3-http-requests-accomplished-by-radmsncom">3) HTTP Requests accomplished by &ldquo;rad[.]msn[.]com?</a></li>
           </ul>
         </li>
       </ul>
     </li>
-    <li><a href="#task-3---packet-dissection">Task 3 - Packet Dissection</a>
+    <li><a href="#task-4---packet-filtering--principles">Task 4 - Packet Filtering | Principles</a></li>
+    <li><a href="#task-5---packet-filtering--principles">Task 5 - Packet Filtering | Principles</a>
       <ul>
         <li>
           <ul>
-            <li><a href="#1-markup-language-used">1) Markup Language used?</a></li>
-            <li><a href="#2-arrival-date-of-the-packet">2) Arrival date of the packet?</a></li>
-            <li><a href="#3-ttl-value">3) TTL value?</a></li>
-            <li><a href="#4-tcp-payload-size">4) TCP payload size?</a></li>
-            <li><a href="#5-e-tag-value">5) e-tag value?</a></li>
+            <li><a href="#1-number-of-ip-packets">1) Number of IP packets?</a></li>
+            <li><a href="#2-packets-with-a-ttl-value-less-than-10">2) Packets with a &ldquo;TTL value less than 10&rdquo;?</a></li>
+            <li><a href="#3-packets-which-uses-tcp-port-4444">3) Packets which uses &ldquo;TCP port 4444&rdquo;?</a></li>
+            <li><a href="#4-http-get-requests-sent-to-port-80">4) &ldquo;HTTP GET&rdquo; requests sent to port &ldquo;80&rdquo;?</a></li>
+            <li><a href="#5-number-of-type-adnsqueries">5) Number of &ldquo;type A DNS Queries&rdquo;?</a></li>
           </ul>
         </li>
       </ul>
     </li>
-    <li><a href="#task-4---packet-navigation">Task 4 - Packet Navigation</a>
+    <li><a href="#task-6---advanced-filtering">Task 6 - Advanced Filtering</a>
       <ul>
         <li>
           <ul>
-            <li><a href="#1-name-of-artist-1">1) Name of artist 1?</a></li>
-            <li><a href="#2-go-to-packet-12-what-is-the-answer">2) Go to packet 12. What is the answer?</a></li>
-            <li><a href="#3-aliens-name">3) Alien&rsquo;s name?</a></li>
-            <li><a href="#4-number-of-warnings">4) Number of warnings?</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#task-5---packet-filtering">Task 5 - Packet Filtering</a>
-      <ul>
-        <li>
-          <ul>
-            <li><a href="#1--filter-query">1)  Filter query?</a></li>
-            <li><a href="#2-number-of-displayed-packets">2) Number of displayed packets?</a></li>
-            <li><a href="#3-total-number-of-artists">3) Total number of artists?</a></li>
-            <li><a href="#4-name-of-the-second-artist">4) Name of the second artist?</a></li>
+            <li><a href="#1-microsoft-iis-servers-packets-not-from-port-80-">1) Microsoft IIS Servers. Packets not from port 80 ?</a></li>
+            <li><a href="#2-microsoft-iis-servers-packets-that-have-version-75-">2) Microsoft IIS Servers. Packets that have &ldquo;version 7.5&rdquo; ?</a></li>
+            <li><a href="#3-packets-that-use-ports-3333-4444-or-9999">3) Packets that use ports 3333, 4444 or 9999?</a></li>
+            <li><a href="#4-packets-with-even-ttl-numbers">4) Packets with &ldquo;even TTL numbers&rdquo;?</a></li>
+            <li><a href="#5-number-of-bad-tcp-checksum-packets">5) Number of &ldquo;Bad TCP Checksum&rdquo; packets?</a></li>
+            <li><a href="#6-number-of-displayed-packets">6) Number of displayed packets?</a></li>
           </ul>
         </li>
       </ul>
@@ -1073,7 +1063,7 @@
         
 
         <div class="article-content max-w-prose mb-20">
-          <p><strong>Note:</strong> The questions are shortened for a cleaner view</p>
+          <p><strong>Note:</strong> The questions are shortened for a cleaner view.</p>
 
 <h2 class="relative group">Task 1 - Introduction 
     <div id="task-1---introduction" class="anchor"></div>
@@ -1084,277 +1074,296 @@
     </span>        
     
 </h2>
-<p>The answers are already provided by THM.</p>
+<p>There&rsquo;s no answer needed</p>
 
-<h4 class="relative group">1) File used to <strong>simulate</strong> the screenshots? 
-    <div id="1-file-used-to-simulate-the-screenshots" class="anchor"></div>
+<h2 class="relative group">Task 2 - Statistics | Summary 
+    <div id="task-2---statistics--summary" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#1-file-used-to-simulate-the-screenshots" aria-label="Anchor">#</a>
-    </span>        
-    
-</h4>
-<p><strong>Ans:</strong> <code>http1.pcapng</code></p>
-
-<h4 class="relative group">2) File used to <strong>answer</strong> the questions? 
-    <div id="2-file-used-to-answer-the-questions" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#2-file-used-to-answer-the-questions" aria-label="Anchor">#</a>
-    </span>        
-    
-</h4>
-<p><strong>Ans:</strong> <code>Exercise.pcapng</code></p>
-<hr>
-
-<h2 class="relative group">Task 2 - Tool Overview 
-    <div id="task-2---tool-overview" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#task-2---tool-overview" aria-label="Anchor">#</a>
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#task-2---statistics--summary" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<p><em>Looking at Statistics -&gt; Capture File Properties</em></p>
 
-<h4 class="relative group">1) What is the flag? 
-    <div id="1-what-is-the-flag" class="anchor"></div>
+<h4 class="relative group">1) IP address of the hostname starts with &ldquo;bbc&rdquo;? 
+    <div id="1-ip-address-of-the-hostname-starts-with-bbc" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#1-what-is-the-flag" aria-label="Anchor">#</a>
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#1-ip-address-of-the-hostname-starts-with-bbc" aria-label="Anchor">#</a>
     </span>        
     
 </h4>
-<p><strong>Ans:</strong> <code>TryHackMe_Wireshark_Demo</code></p>
+<p><em>Statistics -&gt; Resolved Addresses and search for <code>bbc</code></em></p>
+<p><strong>Ans:</strong> <code>199.232.24.81</code></p>
 
-<h4 class="relative group">2) Total number of packets? 
-    <div id="2-total-number-of-packets" class="anchor"></div>
+<h4 class="relative group">2) Number of IPv4 conversations? 
+    <div id="2-number-of-ipv4-conversations" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#2-total-number-of-packets" aria-label="Anchor">#</a>
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#2-number-of-ipv4-conversations" aria-label="Anchor">#</a>
     </span>        
     
 </h4>
-<p><strong>Ans:</strong> <code>58620</code></p>
+<p><em>Statistics -&gt; Conversations</em></p>
+<p><strong>Ans:</strong> <code>435</code></p>
 
-<h4 class="relative group">3) <strong>SHA256 hash</strong> value ? 
-    <div id="3-sha256-hash-value-" class="anchor"></div>
+<h4 class="relative group">3) Bytes (k) transferred from the &ldquo;Micro-St&rdquo; MAC address? 
+    <div id="3-bytes-k-transferred-from-the-micro-st-mac-address" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#3-sha256-hash-value-" aria-label="Anchor">#</a>
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#3-bytes-k-transferred-from-the-micro-st-mac-address" aria-label="Anchor">#</a>
     </span>        
     
 </h4>
-<p><strong>Ans:</strong> <code>f446de335565fb0b0ee5e5a3266703c778b2f3dfad7efeaeccb2da5641a6d6eb</code></p>
+<p><em>Statistics -&gt; Endpoints; Name resolution -&gt; Checked</em></p>
+<p><strong>Ans:</strong> <code>7474</code></p>
+
+<h4 class="relative group">4) IP addresses linked with &ldquo;Kansas City&rdquo;? 
+    <div id="4-ip-addresses-linked-with-kansas-city" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#4-ip-addresses-linked-with-kansas-city" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p><em>Statistics -&gt; Endpoints</em></p>
+<p><strong>Ans:</strong> <code>4</code></p>
+
+<h4 class="relative group">5) IP address  linked with &ldquo;Blicnet&rdquo; AS Organisation? 
+    <div id="5-ip-address--linked-with-blicnet-as-organisation" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#5-ip-address--linked-with-blicnet-as-organisation" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p><em>Statistics -&gt; Endpoints; Sort <code>AS Organisation </code>column</em></p>
+<p><strong>Ans:</strong> <code>188.246.82.7</code></p>
 <hr>
 
-<h2 class="relative group">Task 3 - Packet Dissection 
-    <div id="task-3---packet-dissection" class="anchor"></div>
+<h2 class="relative group">Task 3 - Statistics | Protocol Details: 
+    <div id="task-3---statistics--protocol-details" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#task-3---packet-dissection" aria-label="Anchor">#</a>
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#task-3---statistics--protocol-details" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<p><em>Looking at the Application Data:</em></p>
 
-<h4 class="relative group">1) Markup Language used? 
-    <div id="1-markup-language-used" class="anchor"></div>
+<h4 class="relative group">1) Most used IPv4 destination address? 
+    <div id="1most-used-ipv4-destination-address" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#1-markup-language-used" aria-label="Anchor">#</a>
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#1most-used-ipv4-destination-address" aria-label="Anchor">#</a>
     </span>        
     
 </h4>
-<p><strong>Ans:</strong> <code>eXtensible Markup Language</code></p>
-
-<h4 class="relative group">2) Arrival date of the packet? 
-    <div id="2-arrival-date-of-the-packet" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#2-arrival-date-of-the-packet" aria-label="Anchor">#</a>
-    </span>        
-    
-</h4>
-<p><em>(Answer format: Month/Day/Year)</em></p>
-<p><em>Looking at the Frame:</em></p>
-<p><strong>Ans:</strong> <code>05/13/2004</code></p>
-
-<h4 class="relative group">3) TTL value? 
-    <div id="3-ttl-value" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#3-ttl-value" aria-label="Anchor">#</a>
-    </span>        
-    
-</h4>
-<p><em>Looking at IPv4:</em></p>
-<p><strong>Ans:</strong> <code>47</code></p>
-
-<h4 class="relative group">4) TCP payload size? 
-    <div id="4-tcp-payload-size" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#4-tcp-payload-size" aria-label="Anchor">#</a>
-    </span>        
-    
-</h4>
-<p><em>Looking at Protocol:</em></p>
-<p><strong>Ans:</strong> <code>424</code></p>
-
-<h4 class="relative group">5) e-tag value? 
-    <div id="5-e-tag-value" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#5-e-tag-value" aria-label="Anchor">#</a>
-    </span>        
-    
-</h4>
-<p><em>Looking at Hypertext Transfer Protocol:</em></p>
-<p><strong>Ans:</strong> <code>9a01a-4696-7e354b00</code></p>
+<p><em>Statistics -&gt; IPv4 Statistics -&gt; All Addresses; Sort <code>Count</code> column</em></p>
+<p><strong>Ans:</strong> <code>10.100.1.33</code></p>
 <blockquote>
-<p><em>The HTTP <code>ETag</code> (entity tag) is an identifier for a specific version of a resource, used for caching efficiency and avoiding mid-air collisions.</em></p></blockquote>
-<hr>
+<p>The actual answer is supposed to be <code>10.10.57.178 </code>according to statistical sorting in descending order. However THM seems to accept only the second highest.</p></blockquote>
 
-<h2 class="relative group">Task 4 - Packet Navigation 
-    <div id="task-4---packet-navigation" class="anchor"></div>
+<h4 class="relative group">2) Max service request-response time of the DNS packets? 
+    <div id="2-max-service-request-response-time-of-the-dns-packets" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#task-4---packet-navigation" aria-label="Anchor">#</a>
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#2-max-service-request-response-time-of-the-dns-packets" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p><em>Statistics -&gt; DNS; Sort <code>Max val</code> column; Observe Service Stats -&gt; <code>request-response time (secs)</code></em></p>
+<p><strong>Ans:</strong> <code>0.467897</code></p>
+
+<h4 class="relative group">3) HTTP Requests accomplished by &ldquo;rad[.]msn[.]com? 
+    <div id="3-http-requests-accomplished-by-radmsncom" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#3-http-requests-accomplished-by-radmsncom" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p><em>Statistics -&gt; HTTP; Sort <code>Topic / Item</code> column</em></p>
+<p><strong>Ans:</strong> <code>39</code></p>
+<hr>
+
+<h2 class="relative group">Task 4 - Packet Filtering | Principles 
+    <div id="task-4---packet-filtering--principles" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#task-4---packet-filtering--principles" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>There&rsquo;s no answer needed</p>
+<hr>
+
+<h2 class="relative group">Task 5 - Packet Filtering | Principles 
+    <div id="task-5---packet-filtering--principles" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#task-5---packet-filtering--principles" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
 
-<h4 class="relative group">1) Name of artist 1? 
-    <div id="1-name-of-artist-1" class="anchor"></div>
+<h4 class="relative group">1) Number of IP packets? 
+    <div id="1-number-of-ip-packets" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#1-name-of-artist-1" aria-label="Anchor">#</a>
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#1-number-of-ip-packets" aria-label="Anchor">#</a>
     </span>        
     
 </h4>
-<p><strong>Ans:</strong> <code>r4w8173</code></p>
+<p><em>Set display filter: <code>ip</code>; Observe <code>Displayed</code> at the bottom</em></p>
+<p><strong>Ans:</strong> <code>81420</code></p>
 
-<h4 class="relative group">2) Go to packet 12. What is the answer? 
-    <div id="2-go-to-packet-12-what-is-the-answer" class="anchor"></div>
+<h4 class="relative group">2) Packets with a &ldquo;TTL value less than 10&rdquo;? 
+    <div id="2-packets-with-a-ttl-value-less-than-10" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#2-go-to-packet-12-what-is-the-answer" aria-label="Anchor">#</a>
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#2-packets-with-a-ttl-value-less-than-10" aria-label="Anchor">#</a>
     </span>        
     
 </h4>
-<p><em>Getting the md5 sum of the image:</em></p>
-<p><strong>Ans:</strong> <code>911cd574a42865a956ccde2d04495ebf</code></p>
+<p><em>Set display filter: <code>1p.ttl &lt; 10</code>; Observe <code>Displayed</code> at the bottom</em></p>
+<p><strong>Ans:</strong> <code>66</code></p>
 
-<h4 class="relative group">3) Alien&rsquo;s name? 
-    <div id="3-aliens-name" class="anchor"></div>
+<h4 class="relative group">3) Packets which uses &ldquo;TCP port 4444&rdquo;? 
+    <div id="3-packets-which-uses-tcp-port-4444" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#3-aliens-name" aria-label="Anchor">#</a>
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#3-packets-which-uses-tcp-port-4444" aria-label="Anchor">#</a>
     </span>        
     
 </h4>
-<p><em>Exporting Packet Bytes of Line-based text data and viewing the file we get:</em></p>
-<p><strong>Ans:</strong> <code>PACKETMASTER</code></p>
+<p><em>Set display filter: <code>tcp.port == 4444</code>; Observe <code>Displayed</code> at the bottom</em></p>
+<p><strong>Ans:</strong> <code>632</code></p>
 
-<h4 class="relative group">4) Number of warnings? 
-    <div id="4-number-of-warnings" class="anchor"></div>
+<h4 class="relative group">4) &ldquo;HTTP GET&rdquo; requests sent to port &ldquo;80&rdquo;? 
+    <div id="4-http-get-requests-sent-to-port-80" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#4-number-of-warnings" aria-label="Anchor">#</a>
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#4-http-get-requests-sent-to-port-80" aria-label="Anchor">#</a>
     </span>        
     
 </h4>
-<p><em>Looking at Analyze -&gt; Expert Infromation</em></p>
-<p><strong>Ans:</strong> <code>1636</code></p>
+<p><em>Set display filter: <code>http.request.method == &quot;GET&quot; &amp;&amp; tcp.port == 80</code>; Observe <code>Displayed</code> at the bottom</em></p>
+<p><strong>Ans:</strong> <code>527</code></p>
+
+<h4 class="relative group">5) Number of &ldquo;type A DNS Queries&rdquo;? 
+    <div id="5-number-of-type-adnsqueries" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#5-number-of-type-adnsqueries" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p><em>Set display filter: <code>dns.qry.type == 1 &amp;&amp; dns.flags.response == 1</code>; Observe <code>Displayed</code> at the bottom</em></p>
+<p><strong>Ans:</strong> <code>51</code></p>
+<blockquote>
+<p>Yes, THM did not explicitly mention that it had to be <code>DNS Responses</code>, had to figure this one out by playing around with different filters</p></blockquote>
 <hr>
 
-<h2 class="relative group">Task 5 - Packet Filtering 
-    <div id="task-5---packet-filtering" class="anchor"></div>
+<h2 class="relative group">Task 6 - Advanced Filtering 
+    <div id="task-6---advanced-filtering" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#task-5---packet-filtering" aria-label="Anchor">#</a>
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#task-6---advanced-filtering" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
 
-<h4 class="relative group">1)  Filter query? 
-    <div id="1--filter-query" class="anchor"></div>
+<h4 class="relative group">1) Microsoft IIS Servers. Packets not from port 80 ? 
+    <div id="1-microsoft-iis-servers-packets-not-from-port-80-" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#1--filter-query" aria-label="Anchor">#</a>
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#1-microsoft-iis-servers-packets-not-from-port-80-" aria-label="Anchor">#</a>
     </span>        
     
 </h4>
-<p><strong>Ans:</strong> <code>http</code></p>
+<p><em>Set display filter: <code>http.server matches &quot;microsoft&quot; &amp;&amp; !(tcp.srcport == 80)</code>; Observe <code>Displayed</code> at the bottom</em></p>
+<p><strong>Ans:</strong> <code>21</code></p>
 
-<h4 class="relative group">2) Number of displayed packets? 
-    <div id="2-number-of-displayed-packets" class="anchor"></div>
+<h4 class="relative group">2) Microsoft IIS Servers. Packets that have &ldquo;version 7.5&rdquo; ? 
+    <div id="2-microsoft-iis-servers-packets-that-have-version-75-" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#2-number-of-displayed-packets" aria-label="Anchor">#</a>
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#2-microsoft-iis-servers-packets-that-have-version-75-" aria-label="Anchor">#</a>
     </span>        
     
 </h4>
-<p><em>Looking at the displayed packets with the filter</em> <code>http</code>*</p>
-<p><strong>Ans:</strong> <code>1089</code></p>
+<p><em>Set display filter: <code>http.server matches &quot;microsoft&quot; &amp;&amp; http.server matches &quot;7.5&quot; </code>; Observe <code>Displayed</code> at the bottom</em></p>
+<p><strong>Ans:</strong> <code>71</code></p>
 
-<h4 class="relative group">3) Total number of artists? 
-    <div id="3-total-number-of-artists" class="anchor"></div>
+<h4 class="relative group">3) Packets that use ports 3333, 4444 or 9999? 
+    <div id="3-packets-that-use-ports-3333-4444-or-9999" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#3-total-number-of-artists" aria-label="Anchor">#</a>
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#3-packets-that-use-ports-3333-4444-or-9999" aria-label="Anchor">#</a>
     </span>        
     
 </h4>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;content&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;story&#39;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#39;artists.php?artist=1&#39;</span><span class="p">&gt;&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>r4w8173<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#39;#&#39;</span> <span class="na">onClick</span><span class="o">=</span><span class="s">&#34;window.open(&#39;./comment.php?aid=1&#39;,&#39;comment&#39;,&#39;width=500,height=400&#39;)&#34;</span><span class="p">&gt;</span>comment on this artist<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;story&#39;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#39;artists.php?artist=2&#39;</span><span class="p">&gt;&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Blad3<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#39;#&#39;</span> <span class="na">onClick</span><span class="o">=</span><span class="s">&#34;window.open(&#39;./comment.php?aid=2&#39;,&#39;comment&#39;,&#39;width=500,height=400&#39;)&#34;</span><span class="p">&gt;</span>comment on this artist<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;story&#39;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#39;artists.php?artist=3&#39;</span><span class="p">&gt;&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>lyzae<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#39;#&#39;</span> <span class="na">onClick</span><span class="o">=</span><span class="s">&#34;window.open(&#39;./comment.php?aid=3&#39;,&#39;comment&#39;,&#39;width=500,height=400&#39;)&#34;</span><span class="p">&gt;</span>comment on this artist<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>	
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span></code></pre></div><p><em>We get the above code block by searching for the term</em> <code>artist</code></p>
-<p><strong>Ans:</strong> <code>3</code></p>
+<p><em>Set display filter: <code>tcp.port in {3333 4444 9999}</code>; Observe <code>Displayed</code> at the bottom</em></p>
+<p><strong>Ans:</strong> <code>2235</code></p>
 
-<h4 class="relative group">4) Name of the second artist? 
-    <div id="4-name-of-the-second-artist" class="anchor"></div>
+<h4 class="relative group">4) Packets with &ldquo;even TTL numbers&rdquo;? 
+    <div id="4-packets-with-even-ttl-numbers" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#4-name-of-the-second-artist" aria-label="Anchor">#</a>
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#4-packets-with-even-ttl-numbers" aria-label="Anchor">#</a>
     </span>        
     
 </h4>
-<p><strong>Ans:</strong> <code>Blad3</code></p>
+<p><em>Set display filter: <code>string(ip.ttl) matches &quot;[02468]$&quot;</code>; Observe <code>Displayed</code> at the bottom</em></p>
+<p><strong>Ans:</strong> <code>2235</code></p>
+<blockquote>
+<p>We use the <code>string</code> function because <code>ip.ttl</code> expects a type of <code>integer</code></p></blockquote>
+
+<h4 class="relative group">5) Number of &ldquo;Bad TCP Checksum&rdquo; packets? 
+    <div id="5-number-of-bad-tcp-checksum-packets" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#5-number-of-bad-tcp-checksum-packets" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p><em>Set display filter: <code>tcp.checksum.status == 0</code>; Observe <code>Displayed</code> at the bottom</em></p>
+<p><strong>Ans:</strong> <code>34185</code></p>
+
+<h4 class="relative group">6) Number of displayed packets? 
+    <div id="6-number-of-displayed-packets" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#6-number-of-displayed-packets" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>*Use the <code>gif/jpeg with http-200</code>  button *</p>
+<p><strong>Ans:</strong> <code>261</code></p>
 <hr>
 
           
@@ -1372,7 +1381,7 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/writeups/wireshark-the-basics/&amp;title=Wireshark:%20The%20Basics"
+          href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/writeups/wireshark-packet-operations/&amp;title=Wireshark:%20Packet%20Operations"
           title="Share on LinkedIn"
           aria-label="Share on LinkedIn">
           <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
@@ -1384,7 +1393,7 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://twitter.com/intent/tweet/?url=http://localhost:1313/writeups/wireshark-the-basics/&amp;text=Wireshark:%20The%20Basics"
+          href="https://twitter.com/intent/tweet/?url=http://localhost:1313/writeups/wireshark-packet-operations/&amp;text=Wireshark:%20Packet%20Operations"
           title="Tweet on Twitter"
           aria-label="Tweet on Twitter">
           <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></span>
@@ -1395,7 +1404,7 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://reddit.com/submit/?url=http://localhost:1313/writeups/wireshark-the-basics/&amp;resubmit=true&amp;title=Wireshark:%20The%20Basics"
+          href="https://reddit.com/submit/?url=http://localhost:1313/writeups/wireshark-packet-operations/&amp;resubmit=true&amp;title=Wireshark:%20Packet%20Operations"
           title="Submit to Reddit"
           aria-label="Submit to Reddit">
           <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M201.5 305.5c-13.8 0-24.9-11.1-24.9-24.6 0-13.8 11.1-24.9 24.9-24.9 13.6 0 24.6 11.1 24.6 24.9 0 13.6-11.1 24.6-24.6 24.6zM504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-132.3-41.2c-9.4 0-17.7 3.9-23.8 10-22.4-15.5-52.6-25.5-86.1-26.6l17.4-78.3 55.4 12.5c0 13.6 11.1 24.6 24.6 24.6 13.8 0 24.9-11.3 24.9-24.9s-11.1-24.9-24.9-24.9c-9.7 0-18 5.8-22.1 13.8l-61.2-13.6c-3-.8-6.1 1.4-6.9 4.4l-19.1 86.4c-33.2 1.4-63.1 11.3-85.5 26.8-6.1-6.4-14.7-10.2-24.1-10.2-34.9 0-46.3 46.9-14.4 62.8-1.1 5-1.7 10.2-1.7 15.5 0 52.6 59.2 95.2 132 95.2 73.1 0 132.3-42.6 132.3-95.2 0-5.3-.6-10.8-1.9-15.8 31.3-16 19.8-62.5-14.9-62.5zM302.8 331c-18.2 18.2-76.1 17.9-93.6 0-2.2-2.2-6.1-2.2-8.3 0-2.5 2.5-2.5 6.4 0 8.6 22.8 22.8 87.3 22.8 110.2 0 2.5-2.2 2.5-6.1 0-8.6-2.2-2.2-6.1-2.2-8.3 0zm7.7-75c-13.6 0-24.6 11.1-24.6 24.9 0 13.6 11.1 24.6 24.6 24.6 13.8 0 24.9-11.1 24.9-24.6 0-13.8-11-24.9-24.9-24.9z"/></svg>
@@ -1407,7 +1416,7 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://api.whatsapp.com/send?text=http://localhost:1313/writeups/wireshark-the-basics/&amp;resubmit=true&amp;title=Wireshark:%20The%20Basics"
+          href="https://api.whatsapp.com/send?text=http://localhost:1313/writeups/wireshark-packet-operations/&amp;resubmit=true&amp;title=Wireshark:%20Packet%20Operations"
           title="Share via WhatsApp"
           aria-label="Share via WhatsApp">
           <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
@@ -1419,7 +1428,7 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://t.me/share/url?url=http://localhost:1313/writeups/wireshark-the-basics/&amp;resubmit=true&amp;title=Wireshark:%20The%20Basics"
+          href="https://t.me/share/url?url=http://localhost:1313/writeups/wireshark-packet-operations/&amp;resubmit=true&amp;title=Wireshark:%20Packet%20Operations"
           title="Share via Telegram"
           aria-label="Share via Telegram">
           <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"/></svg>
@@ -1431,7 +1440,7 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://pinterest.com/pin/create/bookmarklet/?url=http://localhost:1313/writeups/wireshark-the-basics/&amp;description=Wireshark:%20The%20Basics"
+          href="https://pinterest.com/pin/create/bookmarklet/?url=http://localhost:1313/writeups/wireshark-packet-operations/&amp;description=Wireshark:%20Packet%20Operations"
           title="Pin on Pinterest"
           aria-label="Pin on Pinterest">
           <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg>
@@ -1443,7 +1452,7 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:1313/writeups/wireshark-the-basics/&amp;quote=Wireshark:%20The%20Basics"
+          href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:1313/writeups/wireshark-packet-operations/&amp;quote=Wireshark:%20Packet%20Operations"
           title="Share on Facebook"
           aria-label="Share on Facebook">
           <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
@@ -1455,7 +1464,7 @@
         <a
           target="_blank"
           class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="mailto:?body=http://localhost:1313/writeups/wireshark-the-basics/&amp;subject=Wireshark:%20The%20Basics"
+          href="mailto:?body=http://localhost:1313/writeups/wireshark-packet-operations/&amp;subject=Wireshark:%20Packet%20Operations"
           title="Send via email"
           aria-label="Send via email">
           <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
@@ -1471,6 +1480,151 @@
   
     <h2 class="mt-8 text-2xl font-extrabold mb-10">Related</h2>
     <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+      
+        
+<div
+  class="group-hover-card group relative min-h-full min-w-full overflow-hidden rounded border border-2 border-neutral-200 shadow-2xl dark:border-neutral-700">
+  <a
+    
+  href="/writeups/wireshark-the-basics/"
+    class="absolute inset-0"
+    aria-label="Wireshark: The Basics"></a>
+      
+    
+        
+          <div
+            class="thumbnail_card_related nozoom w-full"
+            style="background-image:url(/img/featured_congo.svg);"></div>
+        
+      
+  <div class="px-6 py-4">
+    
+      <div
+        class="group-hover-card-title decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 group-hover:underline group-hover:underline-offset-2">
+        Wireshark: The Basics
+      </div>
+    
+    <div class="group-hover-cancel text-sm text-neutral-500 dark:text-neutral-400">
+      
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+
+  
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2025-10-20T00:00:00&#43;00:00">20 October 2025</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
+    
+
+    
+    
+  </div>
+
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  
+
+  
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/tryhackme/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    TryHackMe
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/wireshark/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Wireshark
+  </span>
+</span>
+
+              </a>
+            
+          
+        
+      
+    </div>
+  
+
+  
+  
+
+
+
+    </div>
+    
+  </div>
+  <div class="px-6 pt-4 pb-2"></div>
+</div>
+
       
         
 <div
@@ -1636,8 +1790,8 @@
           type="text/javascript"
           src="/js/page.min.54b6f4371722649edbe871e431d8670d670878c22be8f36e229fe53cc9b786fe25a834def5e6de621f7a3e37b72bc8cd73839aa5ed907ed6cbd45cd3e1b0fa20.js"
           integrity="sha512-VLb0NxciZJ7b6HHkMdhnDWcIeMIr6PNuIp/lPMm3hv4lqDTe9ebeYh96Pje3K8jNc4Oape2QftbL1FzT4bD6IA=="
-          data-oid="views_writeups/Wireshark The Basics/index.md"
-          data-oid-likes="likes_writeups/Wireshark The Basics/index.md"></script>
+          data-oid="views_writeups/Wireshark Packet Operations/index.md"
+          data-oid-likes="likes_writeups/Wireshark Packet Operations/index.md"></script>
       
     </section>
 
@@ -1653,29 +1807,29 @@
       <div class="flex justify-between pt-3">
         <span>
           
-        </span>
-        <span>
-          
-            <a class="flex text-right group ml-3" href="/writeups/wireshark-packet-operations/">
+            <a class="flex group mr-3" href="/writeups/wireshark-the-basics/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
               <span class="flex flex-col">
                 <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Wireshark: Packet Operations</span
+                  >Wireshark: The Basics</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2025-10-21T00:00:00&#43;00:00">21 October 2025</time>
+                    <time datetime="2025-10-20T00:00:00&#43;00:00">20 October 2025</time>
                   
                 </span>
               </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
             </a>
+          
+        </span>
+        <span>
           
         </span>
       </div>
