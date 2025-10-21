@@ -6,7 +6,7 @@ tags:
   - TryHackMe
   - Wireshark
 ---
-**Note:** The questions are shortened for a cleaner view.
+**Note:** The questions are shortened for a cleaner view
 
 ## Task 1 - Introduction
 
@@ -46,7 +46,7 @@ There's no answer needed
 
 ---
 
-## Task 3 - Statistics | Protocol Details: 
+## Task 3 - Statistics | Protocol Details:
 
 
 #### 1) Most used IPv4 destination address?
