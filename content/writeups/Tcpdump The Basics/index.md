@@ -3,7 +3,9 @@ title: "Tcpdump: The Basics"
 date: 2025-10-24
 draft: false
 tags:
-  -
+  - TryHackMe
+  - Cybersecurity
+  - Tcpdump
 ---
 
 **Note:** 

@@ -5,6 +5,7 @@ draft: false
 tags:
   - TryHackMe
   - Wireshark
+  - Cybersecurity
 ---
 **Note:** The questions are shortened for a cleaner view
 
