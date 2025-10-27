@@ -9,7 +9,27 @@
     <managingEditor>mahirabd.official@gmail.com (Mahir)</managingEditor>
     <webMaster>mahirabd.official@gmail.com (Mahir)</webMaster>
     <copyright>© 2025 Mahir</copyright>
-    <lastBuildDate>Sun, 26 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/writeups/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/writeups/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hashing Basics</title>
+      <link>http://localhost:1313/writeups/hashing-basics/</link>
+      <pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate>
+      <author>mahirabd.official@gmail.com (Mahir)</author>
+      <guid>http://localhost:1313/writeups/hashing-basics/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Cryptography Basics</title>
+      <link>http://localhost:1313/writeups/cryptography-basics/</link>
+      <pubDate>Sun, 26 Oct 2025 00:00:00 +0000</pubDate>
+      <author>mahirabd.official@gmail.com (Mahir)</author>
+      <guid>http://localhost:1313/writeups/cryptography-basics/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Nmap: The Basics</title>
@@ -17,6 +37,16 @@
       <pubDate>Sun, 26 Oct 2025 00:00:00 +0000</pubDate>
       <author>mahirabd.official@gmail.com (Mahir)</author>
       <guid>http://localhost:1313/writeups/nmap-the-basics/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Public Key Cryptography Basics</title>
+      <link>http://localhost:1313/writeups/public-key-cryptography-basics/</link>
+      <pubDate>Sun, 26 Oct 2025 00:00:00 +0000</pubDate>
+      <author>mahirabd.official@gmail.com (Mahir)</author>
+      <guid>http://localhost:1313/writeups/public-key-cryptography-basics/</guid>
       <description></description>
       
     </item>
