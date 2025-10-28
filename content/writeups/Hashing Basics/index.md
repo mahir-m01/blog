@@ -38,7 +38,7 @@ user@ip-10-48-180-74:~/Hashing-Basics/Task-2$ sha256sum passport.jpg
 
 >The MD5 hash function produces a fixed output size of **128 bits**, which equals **16 bytes** because each byte consists of 8 bits. Although MD5 hashes are typically displayed as a 32-character hexadecimal string, that format is just a readable representation - each hexadecimal character represents 4 bits, meaning two hex characters equal one byte. Therefore, the 32-character hex string corresponds to a 16-byte binary value.
 
-#### 2) 8-bit hash output, how many possible hash values ?
+#### 3) 8-bit hash output, how many possible hash values ?
 
 *We can find this by calculating 2^8*
 
@@ -94,7 +94,7 @@ user@ip-10-48-180-74:~/Hashing-Basics/Task-2$ sha256sum passport.jpg
 
 **Ans:** `2410`
 
-#### 1) What hashing algorithm is used in Cisco-IOS if it starts with `$9$`?
+#### 3) What hashing algorithm is used in Cisco-IOS if it starts with `$9$`?
 
 **Ans:** `scrypt`
 
