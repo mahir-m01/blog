@@ -130,7 +130,7 @@ msf6 post(windows/gather/enum_shares) > run
 
 #### 4) What is the NTLM hash of the jchambers user?
 
-*Use `hasdump` in meterpreter console*
+*Use `hashdump` in meterpreter console*
 
 ```
 sessions 1
