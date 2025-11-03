@@ -22,6 +22,16 @@
     </item>
     
     <item>
+      <title>Exploits</title>
+      <link>http://localhost:1313/tags/exploits/</link>
+      <pubDate>Mon, 03 Nov 2025 00:00:00 +0000</pubDate>
+      <author>mahirabd.official@gmail.com (Mahir)</author>
+      <guid>http://localhost:1313/tags/exploits/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>Metasploit</title>
       <link>http://localhost:1313/tags/metasploit/</link>
       <pubDate>Mon, 03 Nov 2025 00:00:00 +0000</pubDate>
@@ -47,16 +57,6 @@
       <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
       <author>mahirabd.official@gmail.com (Mahir)</author>
       <guid>http://localhost:1313/tags/cve/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Exploits</title>
-      <link>http://localhost:1313/tags/exploits/</link>
-      <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
-      <author>mahirabd.official@gmail.com (Mahir)</author>
-      <guid>http://localhost:1313/tags/exploits/</guid>
       <description></description>
       
     </item>
