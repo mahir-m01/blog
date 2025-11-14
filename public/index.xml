@@ -22,6 +22,16 @@
     </item>
     
     <item>
+      <title>SQLMap: The Basics</title>
+      <link>http://localhost:1313/writeups/sqlmap-the-basics/</link>
+      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
+      <author>mahirabd.official@gmail.com (Mahir)</author>
+      <guid>http://localhost:1313/writeups/sqlmap-the-basics/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>Gobuster: The Basics</title>
       <link>http://localhost:1313/writeups/gobuster-the-basics/</link>
       <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate>
