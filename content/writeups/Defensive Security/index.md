@@ -9,7 +9,7 @@ tags:
 ---
 **Note:** 
 
-- This is a combined writeup for the Defensive Security module.
+- This is a combined writeup for the Defensive Security Module.
 - The questions are shortened for a cleaner view
 - Questions that are straightforward will only have answers attached. Such questions can be easily answered by reading the documentation given in the room.
 

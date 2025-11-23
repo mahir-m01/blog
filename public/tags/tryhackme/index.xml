@@ -9,7 +9,37 @@
     <managingEditor>mahirabd.official@gmail.com (Mahir)</managingEditor>
     <webMaster>mahirabd.official@gmail.com (Mahir)</webMaster>
     <copyright>© 2025 Mahir</copyright>
-    <lastBuildDate>Tue, 11 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/tryhackme/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/tryhackme/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Defensive Security Tooling Module</title>
+      <link>http://localhost:1313/writeups/defensive-security-tooling/</link>
+      <pubDate>Sat, 22 Nov 2025 00:00:00 +0000</pubDate>
+      <author>mahirabd.official@gmail.com (Mahir)</author>
+      <guid>http://localhost:1313/writeups/defensive-security-tooling/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Security Solution Module</title>
+      <link>http://localhost:1313/writeups/security-solutions/</link>
+      <pubDate>Tue, 18 Nov 2025 00:00:00 +0000</pubDate>
+      <author>mahirabd.official@gmail.com (Mahir)</author>
+      <guid>http://localhost:1313/writeups/security-solutions/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Defensive Security</title>
+      <link>http://localhost:1313/writeups/defensive-security/</link>
+      <pubDate>Mon, 17 Nov 2025 00:00:00 +0000</pubDate>
+      <author>mahirabd.official@gmail.com (Mahir)</author>
+      <guid>http://localhost:1313/writeups/defensive-security/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Shells Overview</title>
