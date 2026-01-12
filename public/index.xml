@@ -8,15 +8,75 @@
     <language>en</language>
     <managingEditor>mahirabd.official@gmail.com (Mahir)</managingEditor>
     <webMaster>mahirabd.official@gmail.com (Mahir)</webMaster>
-    <copyright>© 2025 Mahir</copyright>
-    <lastBuildDate>Wed, 03 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2026 Mahir</copyright>
+    <lastBuildDate>Mon, 12 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>The Great Disappearing Act</title>
-      <link>http://localhost:1313/writeups/the-great-disappearing-act/</link>
-      <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
+      <title>Microsoft Windows Hardening</title>
+      <link>http://localhost:1313/writeups/microsoft-windows-hardening/</link>
+      <pubDate>Mon, 12 Jan 2026 00:00:00 +0000</pubDate>
       <author>mahirabd.official@gmail.com (Mahir)</author>
-      <guid>http://localhost:1313/writeups/the-great-disappearing-act/</guid>
+      <guid>http://localhost:1313/writeups/microsoft-windows-hardening/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Installing Wazuh on Proxmox</title>
+      <link>http://localhost:1313/posts/wazuh/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      <author>mahirabd.official@gmail.com (Mahir)</author>
+      <guid>http://localhost:1313/posts/wazuh/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Linux System Hardening</title>
+      <link>http://localhost:1313/writeups/linux-system-hardening/</link>
+      <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
+      <author>mahirabd.official@gmail.com (Mahir)</author>
+      <guid>http://localhost:1313/writeups/linux-system-hardening/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Secure Network Architecture</title>
+      <link>http://localhost:1313/writeups/secure-network-architecture/</link>
+      <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
+      <author>mahirabd.official@gmail.com (Mahir)</author>
+      <guid>http://localhost:1313/writeups/secure-network-architecture/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>100 Days of DevOps Complete Writeup</title>
+      <link>http://localhost:1313/writeups/100-days-of-devops/</link>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
+      <author>mahirabd.official@gmail.com (Mahir)</author>
+      <guid>http://localhost:1313/writeups/100-days-of-devops/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Installing OPNsense on Proxmox</title>
+      <link>http://localhost:1313/posts/opnsense/</link>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
+      <author>mahirabd.official@gmail.com (Mahir)</author>
+      <guid>http://localhost:1313/posts/opnsense/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>MITRE</title>
+      <link>http://localhost:1313/writeups/mitre/</link>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
+      <author>mahirabd.official@gmail.com (Mahir)</author>
+      <guid>http://localhost:1313/writeups/mitre/</guid>
       <description></description>
       
     </item>
@@ -24,9 +84,19 @@
     <item>
       <title>Advent of Cyber 2025 Complete Writeup</title>
       <link>http://localhost:1313/writeups/advent-of-cyber-2025/</link>
-      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 24 Dec 2025 00:00:00 +0000</pubDate>
       <author>mahirabd.official@gmail.com (Mahir)</author>
       <guid>http://localhost:1313/writeups/advent-of-cyber-2025/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>The Great Disappearing Act</title>
+      <link>http://localhost:1313/writeups/the-great-disappearing-act/</link>
+      <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
+      <author>mahirabd.official@gmail.com (Mahir)</author>
+      <guid>http://localhost:1313/writeups/the-great-disappearing-act/</guid>
       <description></description>
       
     </item>

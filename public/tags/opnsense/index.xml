@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OPNsense on M01&#39;s Tech Space</title>
+    <link>http://localhost:1313/tags/opnsense/</link>
+    <description>Recent content in OPNsense on M01&#39;s Tech Space</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>mahirabd.official@gmail.com (Mahir)</managingEditor>
+    <webMaster>mahirabd.official@gmail.com (Mahir)</webMaster>
+    <copyright>© 2026 Mahir</copyright>
+    <lastBuildDate>Wed, 07 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/opnsense/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Installing OPNsense on Proxmox</title>
+      <link>http://localhost:1313/posts/opnsense/</link>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
+      <author>mahirabd.official@gmail.com (Mahir)</author>
+      <guid>http://localhost:1313/posts/opnsense/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

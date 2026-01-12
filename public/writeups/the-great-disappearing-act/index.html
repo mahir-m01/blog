@@ -149,7 +149,7 @@
     "keywords": ["TryHackMe","Cybersecurity","AOC"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "768"
+    "wordCount": "776"
   }]
   </script>
 
@@ -1125,7 +1125,7 @@ Johnny...and more
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl -X POST <span class="s2">&#34;http://10.48.191.182:13401/v1/streams/request?tier=admin&#34;</span> -H <span class="s2">&#34;Authorization: Bearer {valid_guard_token}&#34;</span> -d <span class="s1">&#39;{&#34;camera_id&#34;:&#34;cam-admin&#34;,&#34;tier&#34;:&#34;guard&#34;}&#39;</span>
 </span></span></code></pre></div><p><em>This returned <code>&quot;effective_tier&quot;: &quot;admin&quot;</code>  with a valid admin ticket, exploiting the server&rsquo;s priority of query parameters over body parameters. I then accessed the real admin camera stream using the ticket ID in the manifest URL.</em></p>
 <p><em>The video showed a keypad being accessed - The code <code>115879</code></em></p>
-<p><em>But ofcousre, it cant&rsquo;t be this easy (even though it wasn&rsquo;t). I only found the first part of the flag:</em></p>
+<p><em>But of course, it cant&rsquo;t be this easy (even though it wasn&rsquo;t). I only found the first part of the flag:</em></p>
 <p><code>THM{Y0u_h4ve_b3en_</code></p>
 
 <h4 class="relative group">1) What is the first flag? 
@@ -1149,6 +1149,8 @@ Johnny...and more
     
 </h4>
 <p><strong>Ans:</strong> <code>THM{Y0u_h4ve_b3en_</code></p>
+<p>This is as far as I got&hellip;</p>
+<hr>
 
           
           
@@ -1264,161 +1266,6 @@ Johnny...and more
   
     <h2 class="mt-8 text-2xl font-extrabold mb-10">Related</h2>
     <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-      
-        
-<div
-  class="group-hover-card group relative min-h-full min-w-full overflow-hidden rounded border border-2 border-neutral-200 shadow-2xl dark:border-neutral-700">
-  <a
-    
-  href="/writeups/advent-of-cyber-2025/"
-    class="absolute inset-0"
-    aria-label="Advent of Cyber 2025 Complete Writeup"></a>
-      
-    
-        
-          <div
-            class="thumbnail_card_related nozoom w-full"
-            style="background-image:url(/img/featured_congo.svg);"></div>
-        
-      
-  <div class="px-6 py-4">
-    
-      <div
-        class="group-hover-card-title decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 group-hover:underline group-hover:underline-offset-2">
-        Advent of Cyber 2025 Complete Writeup
-      </div>
-    
-    <div class="group-hover-cancel text-sm text-neutral-500 dark:text-neutral-400">
-      
-
-
-
-
-
-
-
-  
-
-  
-  
-  
-
-  
-  
-    
-  
-
-  
-    
-  
-
-  
-
-  
-
-  
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  <div class="flex flex-row flex-wrap items-center">
-    
-    
-      <time datetime="2025-12-01T00:00:00&#43;00:00">1 December 2025</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">34 mins</span>
-    
-
-    
-    
-  </div>
-
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  
-
-  
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-      
-        
-          
-        
-      
-        
-      
-        
-          
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/tryhackme/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    TryHackMe
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/cybersecurity/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Cybersecurity
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/aoc/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    AOC
-  </span>
-</span>
-
-              </a>
-            
-          
-        
-      
-    </div>
-  
-
-  
-  
-
-
-
-    </div>
-    
-  </div>
-  <div class="px-6 pt-4 pb-2"></div>
-</div>
-
       
         
 <div
@@ -2680,6 +2527,161 @@ Johnny...and more
 </div>
 
       
+        
+<div
+  class="group-hover-card group relative min-h-full min-w-full overflow-hidden rounded border border-2 border-neutral-200 shadow-2xl dark:border-neutral-700">
+  <a
+    
+  href="/writeups/john-the-ripper-the-basics/"
+    class="absolute inset-0"
+    aria-label="John the Ripper: The Basics"></a>
+      
+    
+        
+          <div
+            class="thumbnail_card_related nozoom w-full"
+            style="background-image:url(/img/featured_congo.svg);"></div>
+        
+      
+  <div class="px-6 py-4">
+    
+      <div
+        class="group-hover-card-title decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 group-hover:underline group-hover:underline-offset-2">
+        John the Ripper: The Basics
+      </div>
+    
+    <div class="group-hover-cancel text-sm text-neutral-500 dark:text-neutral-400">
+      
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+
+  
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2025-10-28T00:00:00&#43;00:00">28 October 2025</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
+    
+
+    
+    
+  </div>
+
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  
+
+  
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/tryhackme/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    TryHackMe
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/hashing/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Hashing
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/cybersecurity/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Cybersecurity
+  </span>
+</span>
+
+              </a>
+            
+          
+        
+      
+    </div>
+  
+
+  
+  
+
+
+
+    </div>
+    
+  </div>
+  <div class="px-6 pt-4 pb-2"></div>
+</div>
+
+      
     </section>
   
 
@@ -2716,7 +2718,7 @@ Johnny...and more
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/writeups/advent-of-cyber-2025/">
+            <a class="flex group mr-3" href="/writeups/cyber-kill-chain/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -2727,11 +2729,11 @@ Johnny...and more
               >
               <span class="flex flex-col">
                 <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Advent of Cyber 2025 Complete Writeup</span
+                  >Cyber Kill Chain</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2025-12-01T00:00:00&#43;00:00">1 December 2025</time>
+                    <time datetime="2025-11-30T00:00:00&#43;00:00">30 November 2025</time>
                   
                 </span>
               </span>
@@ -2739,6 +2741,27 @@ Johnny...and more
           
         </span>
         <span>
+          
+            <a class="flex text-right group ml-3" href="/writeups/advent-of-cyber-2025/">
+              <span class="flex flex-col">
+                <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Advent of Cyber 2025 Complete Writeup</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2025-12-24T00:00:00&#43;00:00">24 December 2025</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
           
         </span>
       </div>
@@ -2794,7 +2817,7 @@ Johnny...and more
     
       <p class="text-sm text-neutral-500 dark:text-neutral-400">
           &copy;
-          2025
+          2026
           Mahir
       </p>
     
