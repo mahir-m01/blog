@@ -1874,9 +1874,9 @@ aws iam get-user-policy --policy-name SirCarrotbanePolicy --user-name sir.carrot
 ```bash
 {
     "Credentials": {
-        "AccessKeyId": "ASIARZPUZDIKHESUK2JW",
-        "SecretAccessKey": "dHXpkubC/xUQrsW1hj8h6rYIPZIq7NjzyMAPIiQG",
-        "SessionToken": "FQoGZXIvYXdzEBYaDs3If44I+VOnd8WIQoE9OZ+/g7Im3Vi4uNV5ILQap7hf9V0TbadC+gJNMYLj6spvCLTnkPA4cbI9yrI+xgXNX0b1+Es0XQDPH+LV/BH4Mu8jV5Tcv0bqu0/f2jmVLmc7wcV+Hcuku07tE9Z1ke7yTWGuVZDzUzbRIbXEpAwIRdfLLVbBT5iiVkpgyna/hZgvRij8yc+yWp0OMd5QT+9hYphz05lMZBcnqhah2kqXpJYnhV1bxqybBr5hIkpTEoeRpAU4twge+cEP17gIrjhG+ZQzbGz0LHnjgzbP/XGgnnXeNiP067elqEIdwFp/krxD3KggY3OIpGbEBt9Q2yI=",
+        "AccessKeyId": "ASIARZPUZDIXXXX",
+        "SecretAccessKey": "dHXpkubCXXXX",
+        "SessionToken": "FQoGZXIvYXdzEBYaDs3IXXXXX",
         "Expiration": "2025-12-23T19:00:05.684942+00:00"
     },
     "AssumedRoleUser": {
@@ -1891,9 +1891,9 @@ aws iam get-user-policy --policy-name SirCarrotbanePolicy --user-name sir.carrot
 *I then exported it using the following commands:*
 
 ```bash
-ubuntu@tryhackme:~$ export AWS_ACCESS_KEY_ID="ASIARZPUZDIKHESUK2JW"
+ubuntu@tryhackme:~$ export AWS_ACCESS_KEY_ID="ASIARZPUZDIXXXX"
 ubuntu@tryhackme:~$ export AWS_SECRET_ACCESS_KEY="dHXpkubC/xUQrsW1hj8h6rYIPZIq7NjzyMAPIiQG"
-ubuntu@tryhackme:~$ export AWS_SESSION_TOKEN="FQoGZXIvYXdzEBYaDs3If44I+VOnd8WIQoE9OZ+/g7Im3Vi4uNV5ILQap7hf9V0TbadC+gJNMYLj6spvCLTnkPA4cbI9yrI+xgXNX0b1+Es0XQDPH+LV/BH4Mu8jV5Tcv0bqu0/f2jmVLmc7wcV+Hcuku07tE9Z1ke7yTWGuVZDzUzbRIbXEpAwIRdfLLVbBT5iiVkpgyna/hZgvRij8yc+yWp0OMd5QT+9hYphz05lMZBcnqhah2kqXpJYnhV1bxqybBr5hIkpTEoeRpAU4twge+cEP17gIrjhG+ZQzbGz0LHnjgzbP/XGgnnXeNiP067elqEIdwFp/krxD3KggY3OIpGbEBt9Q2yI="
+ubuntu@tryhackme:~$ export AWS_SESSION_TOKEN="FQoGZXIvYXdzEBYaDs3IXXXX"
 ```
 
 *Running the command to get caller identity again:*
@@ -1901,7 +1901,7 @@ ubuntu@tryhackme:~$ export AWS_SESSION_TOKEN="FQoGZXIvYXdzEBYaDs3If44I+VOnd8WIQo
 ```bash
 ubuntu@tryhackme:~$ aws sts get-caller-identity
 {
-    "UserId": "AROARZPUZDIKFLCQZSU7D:TBFC",
+    "UserId": "AROARZPUZDIXXXX",
     "Account": "123456789012",
     "Arn": "arn:aws:sts::123456789012:assumed-role/bucketmaster/TBFC"
 }
