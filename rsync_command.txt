@@ -1,0 +1,1 @@
+rsync -av --delete "/Users/mahir/Documents/Obsidian Vault/8 - Website/" "/Users/mahir/Documents/blog/content/"
